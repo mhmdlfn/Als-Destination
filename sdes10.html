@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Al's Destination</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="logo2.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a class="active" href="destinasi.html">Destinasi Wisata</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <section id="prodes" class="section-p1">
+        <div class="single-prog">
+            <img src="destinasi/11.jpg" width="100%" id="mainimg" alt="">
+
+            <div class="smallgmbr">
+                <div class="smallgmbr-col">
+                    <img src="destinasi/11.jpg" width="100%" class="small-gbr" alt="">
+                </div>
+                <div class="smallgmbr-col">
+                    <img src="destinasi/l1.jpg" width="100%" class="small-gbr" alt="">
+                </div>
+                <div class="smallgmbr-col">
+                    <img src="destinasi/l2.jpg" width="100%" class="small-gbr" alt="">
+                </div>
+                <div class="smallgmbr-col">
+                    <img src="destinasi/l3.jpeg" width="100%" class="small-gbr" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-des">
+            <h2>THE LODGE MARIBAYA</h2>
+            <span>The Lodge Maribaya adalah destinasi wisata yang terletak di Lembang, Kabupaten Bandung Barat, Jawa Barat,
+                Indonesia. Tempat ini terkenal karena keindahan alamnya, pemandangan yang memukau, dan berbagai aktivitas outdoor
+                yang cocok untuk pengunjung yang menyukai alam dan petualangan. The Lodge Maribaya adalah tempat yang ideal bagi
+                para pecinta alam, fotografer, keluarga, serta siapa saja yang ingin beristirahat dan menikmati keindahan alam di
+                Lembang. Tempat ini menjadi tujuan wisata yang populer untuk perjalanan sehari atau liburan akhir pekan.
+            </span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Destinasi Lainnya</h2>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="destinasi/9.jpg" alt="">
+                <div class="des">
+                    <h5>Orchid Forest Cikole</h5>
+                </div>
+                <button class="normal"><a href="sdes8.html">Detail</a></button>
+            </div>
+            <div class="pro">
+                <img src="destinasi/10.jpg" alt="">
+                <div class="des">
+                    <h5>Dusun Bambu Lembang</h5>
+                </div>
+                <button class="normal"><a href="sdes9.html">Detail</a></button>
+            </div>
+            <div class="pro">
+                <img src="destinasi/8.jpg" alt="">
+                <div class="des">
+                    <h5>Kawah Putih</h5>
+                </div>
+                <button class="normal"><a href="sdes7.html">Detail</a></button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="logo2.png" alt="">
+            <h4>Kontak</h4>
+            <p><strong>Alamat :</strong> Amarapura, Tangerang Selatan</p>
+            <p><strong>No.Tlp :</strong> +62 812-2003-8468</p>
+            <div class="follow">
+                <h4>Ikuti Kami</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy;Muhamad Alifan Farrizqy &reg;Al's Destination<br>2024</p>
+        </div>
+    </footer>
+
+    <script>
+        var mainimg = document.getElementById("mainimg");
+        var smallgmbr = document.getElementsByClassName("small-gbr");
+
+        smallgmbr[0].onclick = function () {
+            mainimg.src = smallgmbr[0].src;
+        }
+        smallgmbr[1].onclick = function () {
+            mainimg.src = smallgmbr[1].src;
+        }
+        smallgmbr[2].onclick = function () {
+            mainimg.src = smallgmbr[2].src;
+        }
+        smallgmbr[3].onclick = function () {
+            mainimg.src = smallgmbr[3].src;
+        }
+    </script>
+
+    <script src='script.js'></script>
+
+</body>
+
+</html>
